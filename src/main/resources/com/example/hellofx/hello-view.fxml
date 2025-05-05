@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.HelloController">
+   <center>
+      <AnchorPane prefHeight="370.0" prefWidth="590.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableView" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                  <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="pacienteColumn" prefWidth="75.0" text="Paciente" />
+                  <TableColumn fx:id="razonSocialColumn" prefWidth="75.0" text="Razon Social" />
+                  <TableColumn fx:id="rfcColumn" prefWidth="75.0" text="RFC" />
+                  <TableColumn fx:id="regimenColumn" prefWidth="75.0" text="Regimen" />
+                  <TableColumn fx:id="cfdiColumn" prefWidth="75.0" text="CFDI" />
+                  <TableColumn fx:id="correoColumn" prefWidth="75.0" text="Correo" />
+                  <TableColumn fx:id="montoColumn" prefWidth="75.0" text="Monto" />
+                  <TableColumn fx:id="formaPagoColumn" prefWidth="75.0" text="Forma de Pago" />
+                  <TableColumn fx:id="conceptoColumn" prefWidth="75.0" text="Concepto" />
+                  <TableColumn fx:id="telefonoColumn" prefWidth="75.0" text="Telefono" />
+                  <TableColumn fx:id="estadoColumn" prefWidth="75.0" text="Estado" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <HBox prefHeight="0.0" prefWidth="600.0" spacing="5.0" BorderPane.alignment="CENTER">
+   <children>
+      <Button fx:id="botonNuevo" maxWidth="Infinity" mnemonicParsing="false" onAction="#openNuevaSolicitudWindow" text="Nueva" HBox.hgrow="ALWAYS" />
+      <Button maxWidth="Infinity" mnemonicParsing="false" text="Editar" HBox.hgrow="ALWAYS" />
+      <Button maxWidth="Infinity" mnemonicParsing="false" text="Buscar" HBox.hgrow="ALWAYS" />
+      <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#handleDeleteButton" text="Borrar" HBox.hgrow="ALWAYS" />
+      <Button maxWidth="Infinity" mnemonicParsing="false" text="Generar Correos Pendientes" HBox.hgrow="ALWAYS" />
+       <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#reloadTable" text="Recargar" HBox.hgrow="ALWAYS" />
+   </children>
+</HBox>
+   </top>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>

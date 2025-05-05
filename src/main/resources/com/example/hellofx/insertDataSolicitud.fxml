@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.InsertDataSolicitud">
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="600.0" spacing="10" BorderPane.alignment="CENTER">
+            <children>
+                <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#closeWindow" text="Cancelar" HBox.hgrow="ALWAYS" />
+                <Button maxWidth="Infinity" mnemonicParsing="false" text="Catalogo de usos de CFDI" HBox.hgrow="ALWAYS" />
+                <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#handleAcceptButton" text="Aceptar" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+    </bottom>
+    <center>
+        <GridPane alignment="CENTER" hgap="10" vgap="10" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label alignment="CENTER" maxWidth="Infinity" text="Uso de CFDI:" />
+                <Label alignment="CENTER" maxWidth="Infinity" text="Monto:" GridPane.columnIndex="1" />
+                <Label alignment="CENTER" maxWidth="Infinity" text="Concepto:" GridPane.rowIndex="2" />
+                <Label alignment="CENTER" maxWidth="Infinity" text="Forma de Pago:" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="montoTextField" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="conceptoTextField" maxWidth="Infinity" GridPane.rowIndex="3" />
+                <ChoiceBox fx:id="choiceBoxCFDI" maxWidth="Infinity" GridPane.rowIndex="1" />
+                <ChoiceBox fx:id="choiceBoxForma" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+    </center>
+   <top>
+      <Label text="Insertar los datos de la transaccion:" BorderPane.alignment="CENTER" />
+   </top>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>

@@ -1,0 +1,36 @@
+# IntelliJ IDEA files
+.idea/
+*.iml
+
+# Build files
+out/
+bin/
+
+# Gradle files
+.gradle/
+build/
+
+# Maven files
+target/
+
+# Java files
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# JavaFX libraries (if downloaded locally)
+javafx-sdk/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Ignore all generated files from IntelliJ and JavaFX builds
